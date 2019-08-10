@@ -14,11 +14,6 @@ class EventController extends Controller{
 
     }
 
-    public function getEvents(){
-
-
-    }
-
     public function getEvent(){
 
         $shapes = DB::table('shapes')->get();
@@ -28,7 +23,9 @@ class EventController extends Controller{
 
             $arr_shapes[$shape->shape_name] = array(
                 "parmas" => $shape->params,
-                "extent" => $shape->extent
+                "extent" => $shape->extent,
+                "shape_type" => $shape->shape_type_name,
+                "shape_name" => $shape->shape_name
             );
 
         }

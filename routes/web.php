@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('shapes');
-});
+Route::get('/', 'ShapeController@index');
+Route::post('/', 'ShapeController@create');
 
 
 Route::get('/shape', 'ShapeController@index');
