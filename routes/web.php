@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('shapes');
 });
+
+
+Route::get('/shape', 'ShapeController@index');
+
+
+Route::get('guess', 'EventController@getEvent');
+
+Route::post('guess', 'EventController@setEvent');
+

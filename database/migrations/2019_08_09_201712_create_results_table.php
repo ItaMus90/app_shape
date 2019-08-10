@@ -22,7 +22,7 @@ class CreateResultsTable extends Migration
         });
 
         Schema::table('results', function($table) {
-            $table->primary(['shape_name']);
+            $table->primary(['id']);
         });
     }
 
