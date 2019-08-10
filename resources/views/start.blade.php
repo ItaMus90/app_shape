@@ -44,6 +44,18 @@
                 },
                 "extent": 240
 
+            },
+
+            1: {
+
+                "shape_name" : "square_2",
+                "shape_type_name": "square",
+                "params": {
+                    "x1": 150,
+                    "x2": 75
+                },
+                "extent": 450
+
             }
 
         };
